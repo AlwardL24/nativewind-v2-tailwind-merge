@@ -21,6 +21,8 @@ import { useComponentState } from "./use-component-state";
 import { GROUP, GROUP_ISO, matchesMask } from "../utils/selector";
 import { Style } from "../types/common";
 
+import { twMerge } from "tailwind-merge";
+
 export interface StyledOptions<
   T,
   P extends keyof T = never,
@@ -120,9 +122,8 @@ export function styled<
     const store = useContext(StoreContext);
     const groupContext = useContext(GroupContext);
     const isolateGroupContext = useContext(IsolateGroupContext);
-
     const classNameWithDefaults = baseClassName
-      ? `${baseClassName} ${twClassName ?? propClassName}`
+      ? twMerge(baseClassName, twClassName ?? propClassName)
       : twClassName ?? propClassName;
 
     /**
