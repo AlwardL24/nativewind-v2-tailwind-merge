@@ -1,6 +1,6 @@
 {
   "version": "2.0.11",
-  "name": "nativewind",
+  "name": "@alwardl24/nativewind-v2-tailwind-merge",
   "description": "Use Tailwindcss in your cross-platform React Native applications",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,7 +17,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/marklawlor/nativewind.git"
+    "url": "https://github.com/AlwardL24/nativewind-v2-tailwind-merge.git"
   },
   "author": {
     "name": "Mark Lawlor",
